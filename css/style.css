@@ -1,0 +1,169 @@
+/*Start Common Variables*/
+:root {
+    --white-color: #F6F1EE;
+    --orange-color: #ED7D31;
+    --grey-color: #323a49;
+    --dark-color: #1f2632;
+    --smaoy-color: #dde6f0;
+    --green-color:#52ffa8;
+    --main-trans-time: 0.5s;
+}
+
+/*End Common Variables*/
+/*Start Common Rules*/
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: "Work Sans", sans-serif;
+    margin: 0;
+    background-color: var(--dark-color);   
+}
+::-webkit-scrollbar {
+    width: 5px;
+}
+::-webkit-scrollbar-track {
+    background-color: var(--dark-color);
+}
+::-webkit-scrollbar-thumb {
+    background-color: var(--white-color);
+}
+
+.container {
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/*Media quiers*/
+/*small screens*/
+@media (min-width : 768px) {
+    .container {
+        width: 750px;
+    }
+}
+
+/*medium screens*/
+@media (min-width : 992px) {
+    .container {
+        width: 970px;
+    }
+}
+
+/*large screens*/
+@media (min-width : 1200px) {
+    .container {
+        width: 1170px;
+    }
+}
+
+/* End Common Rules */
+.advice-app{
+    padding: 40px 0;
+    margin: 0 auto;
+}
+.advice-app .current-advice{
+    margin-bottom: 100px;
+    
+}
+.advice-app .current-advice .advice{
+    max-width: 32rem;
+    position: relative;
+}
+
+.advice-app .saved-advices{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 40px; 
+}
+.advice-app .advice{
+    position: relative;
+    background-color: var(--grey-color);
+    color: var(--smaoy-color);
+    padding: 20px 30px 40px ;
+    text-align: center;
+    width: 100%;
+    margin: 0 auto;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+
+.advice-app .advice .save{
+    font-size: 50px;
+    position: absolute;
+    top: -20px;
+    left: 20px;
+    cursor: pointer;
+    color: var(--smaoy-color);
+    transition: var(--main-trans-time);
+    -webkit-transition: var(--main-trans-time);
+    -moz-transition: var(--main-trans-time);
+    -ms-transition: var(--main-trans-time);
+    -o-transition: var(--main-trans-time);
+}
+.advice-app .advice .save:hover,
+.advice-app .advice .saved{
+    color: var(--green-color);
+}
+
+.advice-app .advice h2{
+    letter-spacing: 5px;
+    font-size: 18px;
+    color: var(--dark-color);
+}
+.advice-app .advice h2 .advice-num{
+    color: var(--green-color);
+    margin-left: 5px;
+}
+.advice-app .advice p{
+    line-height: 2;
+    letter-spacing: 2px;
+    word-spacing: 0.5px;
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.advice-app .advice .another-advice{
+    position: absolute;
+    bottom: -30px;
+    left: 50%;
+    font-size: 50px;
+    width: 70px;
+    height: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    background-color: var(--grey-color);
+    color: var(--green-color);
+    transition: var(--main-trans-time);
+    border-radius: 50%;
+    transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    -o-transform: translateX(-50%);
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    -webkit-transition: var(--main-trans-time);
+    -moz-transition: var(--main-trans-time);
+    -ms-transition: var(--main-trans-time);
+    -o-transition: var(--main-trans-time);
+}
+.advice-app .advice .another-advice:hover{
+    background-color: var(--dark-color);
+    color: white;
+}
