@@ -1,5 +1,8 @@
 # Advice-Generator-App
-This show advice for clients using API and allow user to save advices in his local storage and remove it from saved advices.
+- This show advice for user using API and allow user to save advices in his local storage and remove it from saved advices.
+- user show advices in random way every time.
+- he can save/remove advices in/from his local storage.
+- every time he open the site he shows the saved advices.
 # Covered Topics :
 - html5
 - css3
