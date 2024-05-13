@@ -14,7 +14,7 @@
     - Local Storage 
     - API
 
-# Live Site : [Advice Generator App](https://ahmedsaa3d.github.io/AdvicegeneratorApp/)
+# Live Site : [Advice Generator App](https://ahmedsaa3d.github.io/Advice-Generator-App/)
   
 # Site ScreenShot :
 ![](Advice-Generator-App-Desgin-1.png)
